@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group 'org.skan'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+compileJava{
+    options.encoding="UTF-8"
+}
+compileTestJava{
+    options.encoding="UTF-8"
+}
+
+def slf4jVersion = "1.7.32"
+
+dependencies {
+    testImplementation(
+            "io.rest-assured:rest-assured:5.3.0",
+            "org.junit.jupiter:junit-jupiter:5.9.0",
+            "org.slf4j:slf4j-simple:$slf4jVersion"
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
