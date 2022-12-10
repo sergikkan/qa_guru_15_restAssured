@@ -8,7 +8,6 @@ import static org.hamcrest.Matchers.is;
 
 public class ReqresInTests {
 
-    //{ "id": 4, "token": "QpwL5tke4Pnpja7X4" }
     @Test
     void registerTest() {
         String data = "{ \"email\": \"eve.holt@reqres.in\", \"password\": \"pistol\" }";
