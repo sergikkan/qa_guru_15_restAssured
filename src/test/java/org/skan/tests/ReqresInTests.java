@@ -1,4 +1,4 @@
-package org.skan;
+package org.skan.tests;
 
 import org.junit.jupiter.api.Test;
 
