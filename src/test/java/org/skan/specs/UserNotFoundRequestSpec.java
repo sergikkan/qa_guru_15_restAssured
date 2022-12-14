@@ -6,12 +6,12 @@ import static io.restassured.RestAssured.with;
 import static io.restassured.http.ContentType.JSON;
 import static org.skan.helpers.CustomApiListener.withCustomTemplates;
 
-public class   RegisterRequestSpecs {
+public class UserNotFoundRequestSpec {
 
-    public static RequestSpecification registerRequestSpec = with()
+    public static RequestSpecification userNotFoundRequestSpec = with()
             .filter(withCustomTemplates())
             .baseUri("https://reqres.in")
-            .basePath("/api/register")
-            .log().all()
-            .contentType(JSON);
+            .basePath("api/users/23")
+            .log().uri();
+
 }
